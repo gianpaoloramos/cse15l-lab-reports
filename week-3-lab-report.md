@@ -73,7 +73,9 @@ Finally, it displays the list on the screen with the following code:
 Let's add a few more strings to the list before the next example.
 
 ![image](watermelonAdd.png)
+
 ![image](appleAdd.png)
+
 ![image](pineappleAdd.png)
 
 We are also able to search for specific substring in our list of strings, using: 
@@ -98,12 +100,14 @@ This creates a new ArrayList called returnList that we will add our strings that
 
 `return "Strings found:" + Arrays.toString(returnList.toArray());`
 
-##Part 2: Bugs and Symptoms
+## Part 2: Bugs and Symptoms
 
 ### Reverse in Place
 
 ![image](reverseInPlace.png)
+
 ![image](reverseInPlace2.png)
+
 ![image](reverseInPlace3.png)
 
 This test was failing because it was changing the values at the start of the array to match the last one, so when it would try change the last value to match the first value, it was changing it to the already updated reversed value. I fixed this by making a new array that was a copy of the original array, and used that as a reference instead.
@@ -111,7 +115,9 @@ This test was failing because it was changing the values at the start of the arr
 ### Filter
 
 ![image](filter.png)
+
 ![image](filter2.png)
+
 ![image](filter3.png)
 
 This test was failing because it is supposed to filter the list of strings using the string checker if the string checker returns true in the same order as the input list. In this case, the string checker returns true if the given string is over 5 characters. However, the output list is actually in reverse order because every string that is added to it is added at index 0, causing it to be in the reverse order. We fix this simply by removing the 0, causing the string to be added on to the end of the list. 
