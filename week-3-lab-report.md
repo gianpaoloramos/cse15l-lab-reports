@@ -3,6 +3,7 @@
 ## Part 1: Simplest Search Engine
 
 Here is the code for my search engine:
+
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -54,6 +55,7 @@ class SearchEngineServer {
     }
 }
 ```
+
  ![image](strawberryAdd.png)
 
 In this screenshot, we are adding the string `strawberry` to the list. This calls the code
@@ -104,9 +106,14 @@ This creates a new ArrayList called returnList that we will add our strings that
 
 ### Reverse in Place
 
+#### Code to testReverseInPlace
 ![image](reverseInPlace.png)
 
+#### Output for the failure inducing test
+
 ![image](reverseInPlace2.png)
+
+#### Fixed code for reverseInPlace
 
 ![image](reverseInPlace3.png)
 
@@ -114,9 +121,14 @@ This test was failing because it was changing the values at the start of the arr
 
 ### Filter
 
+#### Code to testFilter
 ![image](filter.png)
 
+#### Output for the failure inducing test
+
 ![image](filter2.png)
+
+#### Fixed code for filter
 
 ![image](filter3.png)
 
